@@ -17,7 +17,7 @@ class _TestState extends State<Test> {
           children: [
             Align(
               child: Text(
-                "This is the page of acceuil",
+                "This is the  of acceuil",
                 style: TextStyle(
                     fontSize: 19,
                     color: Colors.black,
