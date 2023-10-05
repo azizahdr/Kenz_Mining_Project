@@ -5,7 +5,7 @@ import 'package:my_app/Formulaires%20DepAdmin/ServiceAchat.dart';
 import 'package:my_app/Formulaires%20DepAdmin/ServiceMoyen.dart';
 
 class AcceuilAdmn extends StatefulWidget {
-  AcceuilAdmn({Key? key}) : super(key: key);
+  const AcceuilAdmn({Key? key}) : super(key: key);
 
   @override
   State<AcceuilAdmn> createState() => _AcceuilAdmnState();
