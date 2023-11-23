@@ -1,5 +1,9 @@
+import 'dart:convert';
+import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:my_app/Acceuil.dart';
+import 'package:my_app/user.dart';
+import 'package:http/http.dart' as http;
 
 class login extends StatefulWidget {
   login({Key? key}) : super(key: key);
@@ -10,21 +14,20 @@ class login extends StatefulWidget {
 
 class _loginState extends State<login> {
   bool _isObscure = true;
+  // User user = User("", "");
+  // String url = "http://localhost:8080/login";
+  // Future save() async {
+  //   var res = await http.post(url as Uri,
+  //       headers: {
+  //         'Content-Type': 'Application/json',
+  //       },
+  //       body: json.encode({'Nom': user.Nom, 'MotPass': user.MotPass}));
+  //   print(res.body);
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Center(
-          child: Text(
-            "Kenz Mining",
-            style: TextStyle(
-              color: Colors.blue,
-            ),
-            textAlign: TextAlign.center,
-          ),
-        ),
-        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-      ),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -39,14 +42,18 @@ class _loginState extends State<login> {
             ])),
         child: ListView(
           children: <Widget>[
-            Container(
-              height: 120,
-              decoration: const BoxDecoration(
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Container(
+                height: 120,
+                decoration: const BoxDecoration(
                   image: DecorationImage(
-                image: AssetImage(
-                  "images/GRH.png",
+                    image: AssetImage(
+                      "images/LOGO.png",
+                    ),
+                  ),
                 ),
-              )),
+              ),
             ),
             Container(
               margin: const EdgeInsets.only(top: 50),
@@ -81,7 +88,17 @@ class _loginState extends State<login> {
                         Container(
                           padding: const EdgeInsets.all(8.0),
                           decoration: const BoxDecoration(),
-                          child: TextField(
+                          child: TextFormField(
+                            // controller: TextEditingController(text: user.Nom),
+                            // onChanged: (val) {
+                            //   // user.Nom = val;
+                            // },
+                            // validator: (value) {
+                            //   if (value!.isEmpty) {
+                            //     return "Veuillez saisissez votre Nom";
+                            //   }
+                            //   return "";
+                            // },
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               prefixIcon: const Icon(
@@ -117,7 +134,18 @@ class _loginState extends State<login> {
                         Container(
                           padding: const EdgeInsets.all(8.0),
                           decoration: const BoxDecoration(),
-                          child: TextField(
+                          child: TextFormField(
+                            // // controller:
+                            // //     TextEditingController(text: user.MotPass),
+                            // // onChanged: (val) {
+                            // //   user.MotPass = val;
+                            // // },
+                            // validator: (value) {
+                            //   if (value!.isEmpty) {
+                            //     return "Veuillez saisissez votre Mot de Passe";
+                            //   }
+                            //   return "";
+                            // },
                             obscureText: _isObscure,
                             decoration: InputDecoration(
                               border: InputBorder.none,

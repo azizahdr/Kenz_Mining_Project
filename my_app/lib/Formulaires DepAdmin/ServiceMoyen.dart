@@ -66,9 +66,9 @@ class _ServiceMoyenState extends State<ServiceMoyen> {
                           blurRadius: 15,
                           spreadRadius: 1)
                     ]),
-                child: const Column(
+                child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Icon(Icons.apartment,
                           size: 50, color: Color.fromARGB(255, 60, 162, 245)),
                       Text(
@@ -107,9 +107,9 @@ class _ServiceMoyenState extends State<ServiceMoyen> {
                           blurRadius: 15,
                           spreadRadius: 1)
                     ]),
-                child: const Column(
+                child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Icon(Icons.car_rental_sharp,
                           size: 50, color: Color.fromARGB(255, 60, 162, 245)),
                       Text(
@@ -148,9 +148,9 @@ class _ServiceMoyenState extends State<ServiceMoyen> {
                           blurRadius: 15,
                           spreadRadius: 1)
                     ]),
-                child: const Column(
+                child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Icon(
                         Icons.warehouse,
                         size: 50,

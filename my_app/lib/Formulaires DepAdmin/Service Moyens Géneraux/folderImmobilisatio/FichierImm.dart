@@ -74,9 +74,9 @@ class FichierImm extends StatelessWidget {
                 decoration: const BoxDecoration(color: Colors.black),
                 height: 60,
                 width: 1300,
-                child: const Column(
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Align(
                       alignment: Alignment.topRight,
                       child: Padding(
@@ -129,8 +129,7 @@ class FichierImm extends StatelessWidget {
               ),
               DataTable(
                 border: TableBorder.all(width: 2.5),
-                dataRowMinHeight: 250.0,
-                dataRowMaxHeight: 250.0,
+                dataRowHeight: 250.0,
                 columnSpacing: 30,
                 columns: const [
                   DataColumn(

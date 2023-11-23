@@ -134,8 +134,7 @@ class GuestHouse extends StatelessWidget {
               ),
               DataTable(
                 border: TableBorder.all(width: 2.5),
-                dataRowMinHeight: 35.0,
-                dataRowMaxHeight: 35.0,
+                dataRowHeight: 35.0,
                 columnSpacing: 200,
                 columns: const [
                   DataColumn(

@@ -113,8 +113,7 @@ class CarnetBord extends StatelessWidget {
                   // scrollDirection: Axis.vertical,
                   child: DataTable(
                 border: TableBorder.all(width: 2.5),
-                dataRowMinHeight: 25.0,
-                dataRowMaxHeight: 25.0,
+                dataRowHeight: 25.0,
                 columnSpacing: 228,
                 columns: const [
                   DataColumn(
@@ -172,8 +171,7 @@ class CarnetBord extends StatelessWidget {
               //Deuxiéme tablau
               DataTable(
                 border: TableBorder.all(width: 2.5),
-                dataRowMinHeight: 35.0,
-                dataRowMaxHeight: 35.0,
+                dataRowHeight: 35.0,
                 columnSpacing: 100,
                 columns: const [
                   DataColumn(
@@ -307,8 +305,7 @@ class CarnetBord extends StatelessWidget {
               ),
               DataTable(
                 border: TableBorder.all(width: 2.5),
-                dataRowMinHeight: 35.0,
-                dataRowMaxHeight: 35.0,
+                dataRowHeight: 35.0,
                 columnSpacing: 280,
                 columns: const [
                   DataColumn(
@@ -412,8 +409,7 @@ class CarnetBord extends StatelessWidget {
               ),
               DataTable(
                 border: TableBorder.all(width: 2.5),
-                dataRowMinHeight: 35.0,
-                dataRowMaxHeight: 35.0,
+                dataRowHeight: 35.0,
                 columnSpacing: 280,
                 columns: const [
                   DataColumn(
@@ -517,8 +513,7 @@ class CarnetBord extends StatelessWidget {
               ),
               DataTable(
                 border: TableBorder.all(width: 2.5),
-                dataRowMinHeight: 35.0,
-                dataRowMaxHeight: 35.0,
+                dataRowHeight: 35.0,
                 columnSpacing: 250,
                 columns: const [
                   DataColumn(
@@ -622,8 +617,7 @@ class CarnetBord extends StatelessWidget {
               ),
               DataTable(
                 border: TableBorder.all(width: 2.5),
-                dataRowMinHeight: 35.0,
-                dataRowMaxHeight: 35.0,
+                dataRowHeight: 35.0,
                 columnSpacing: 190,
                 columns: const [
                   DataColumn(

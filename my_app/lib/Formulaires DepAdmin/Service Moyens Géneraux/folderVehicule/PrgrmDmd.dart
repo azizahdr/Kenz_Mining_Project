@@ -76,9 +76,9 @@ class PrgrmDmd extends StatelessWidget {
                 decoration: const BoxDecoration(color: Colors.black),
                 height: 60,
                 width: 1300,
-                child: const Column(
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Align(
                       alignment: Alignment.topRight,
                       child: Padding(
