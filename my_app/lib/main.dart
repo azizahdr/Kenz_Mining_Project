@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: "Kenz Mining Sa",
       theme: ThemeData(visualDensity: VisualDensity.adaptivePlatformDensity),
       debugShowCheckedModeBanner: false,
-      home: login(),
+      home: MyTable(),
     );
   }
 }

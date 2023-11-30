@@ -132,12 +132,12 @@ class _folderVehiculeState extends State<folderVehicule> {
               ),
               GestureDetector(
                 onTap: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (BuildContext context) => const Entretien(),
-                  //   ),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => const Entretien(),
+                    ),
+                  );
                 },
                 child: Container(
                   decoration: BoxDecoration(
