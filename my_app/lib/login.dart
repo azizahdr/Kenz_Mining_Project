@@ -14,16 +14,6 @@ class login extends StatefulWidget {
 
 class _loginState extends State<login> {
   bool _isObscure = true;
-  // User user = User("", "");
-  // String url = "http://localhost:8080/login";
-  // Future save() async {
-  //   var res = await http.post(url as Uri,
-  //       headers: {
-  //         'Content-Type': 'Application/json',
-  //       },
-  //       body: json.encode({'Nom': user.Nom, 'MotPass': user.MotPass}));
-  //   print(res.body);
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -89,16 +79,6 @@ class _loginState extends State<login> {
                           padding: const EdgeInsets.all(8.0),
                           decoration: const BoxDecoration(),
                           child: TextFormField(
-                            // controller: TextEditingController(text: user.Nom),
-                            // onChanged: (val) {
-                            //   // user.Nom = val;
-                            // },
-                            // validator: (value) {
-                            //   if (value!.isEmpty) {
-                            //     return "Veuillez saisissez votre Nom";
-                            //   }
-                            //   return "";
-                            // },
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               prefixIcon: const Icon(
@@ -135,17 +115,6 @@ class _loginState extends State<login> {
                           padding: const EdgeInsets.all(8.0),
                           decoration: const BoxDecoration(),
                           child: TextFormField(
-                            // // controller:
-                            // //     TextEditingController(text: user.MotPass),
-                            // // onChanged: (val) {
-                            // //   user.MotPass = val;
-                            // // },
-                            // validator: (value) {
-                            //   if (value!.isEmpty) {
-                            //     return "Veuillez saisissez votre Mot de Passe";
-                            //   }
-                            //   return "";
-                            // },
                             obscureText: _isObscure,
                             decoration: InputDecoration(
                               border: InputBorder.none,

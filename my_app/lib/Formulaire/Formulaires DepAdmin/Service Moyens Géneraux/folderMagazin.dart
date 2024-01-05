@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/Formulaires%20DepAdmin/Service%20Moyens%20G%C3%A9neraux/folder%20Magazin/GuestHouse.dart';
-import 'package:my_app/Formulaires%20DepAdmin/Service%20Moyens%20G%C3%A9neraux/folder%20Magazin/RepLocaux.dart';
+import 'package:my_app/Formulaire/Formulaires%20DepAdmin/Service%20Moyens%20G%C3%A9neraux/folder%20Magazin/GuestHouse.dart';
+import 'package:my_app/Formulaire/Formulaires%20DepAdmin/Service%20Moyens%20G%C3%A9neraux/folder%20Magazin/RepLocaux.dart';
 
 class folderMagazin extends StatefulWidget {
   folderMagazin({Key? key}) : super(key: key);

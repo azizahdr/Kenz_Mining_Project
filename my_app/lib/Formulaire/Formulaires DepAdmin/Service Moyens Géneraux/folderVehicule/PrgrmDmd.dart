@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../Acceuil.dart';
+import '../../../../Acceuil.dart';
 
-class dosVehicule extends StatelessWidget {
-  const dosVehicule({Key? key}) : super(key: key);
+class PrgrmDmd extends StatelessWidget {
+  const PrgrmDmd({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -72,12 +72,51 @@ class dosVehicule extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
+              Container(
+                decoration: const BoxDecoration(color: Colors.black),
+                height: 60,
+                width: 1300,
+                child: const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: Padding(
+                        padding: EdgeInsets.only(right: 10.0),
+                        child: Text(
+                          'KENZ SA/ADM/GPR/01',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 19,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: Padding(
+                        padding: EdgeInsets.only(right: 10.0),
+                        child: Text(
+                          'Annexe 5',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 19,
+                              color: Colors.white),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
               const Align(
                 alignment: Alignment.center,
                 child: Padding(
                   padding: EdgeInsets.only(left: 40.0),
                   child: Text(
-                    "Dossier du vehicule",
+                    'Programme ou demande de mise a disposition',
                     style: TextStyle(
                         fontFamily: 'Poppins',
                         fontStyle: FontStyle.normal,
@@ -92,109 +131,49 @@ class dosVehicule extends StatelessWidget {
               ),
               DataTable(
                 border: TableBorder.all(width: 2.5),
-                dataRowHeight: 35.0,
                 columnSpacing: 200,
                 columns: const [
                   DataColumn(
-                      label: Text(
-                    "Type de véhicule",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 19,
-                    ),
-                  )),
-                  DataColumn(label: TextField()),
-                  DataColumn(label: TextField()),
-                  DataColumn(label: TextField()),
-                  DataColumn(label: TextField()),
+                      label: Text("Vehicule",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 19,
+                              color: Color.fromARGB(255, 8, 7, 6)))),
+                  DataColumn(
+                      label: Text("Date",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 19,
+                              color: Color.fromARGB(255, 8, 7, 6)))),
+                  DataColumn(
+                      label: Text("Durée",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 19,
+                              color: Color.fromARGB(255, 8, 7, 6)))),
+                  DataColumn(
+                      label: Text("Lieu",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 19,
+                              color: Color.fromARGB(255, 8, 7, 6)))),
+                  DataColumn(
+                      label: Text("Motif",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 19,
+                              color: Color.fromARGB(255, 8, 7, 6)))),
                 ],
                 rows: const [
                   DataRow(cells: [
-                    DataCell(Text(
-                      "N° de chassis",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 19,
-                      ),
-                    )),
+                    DataCell(TextField()),
                     DataCell(TextField()),
                     DataCell(TextField()),
                     DataCell(TextField()),
                     DataCell(TextField()),
                   ]),
                   DataRow(cells: [
-                    DataCell(Text(
-                      "Immatriculation",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 19,
-                      ),
-                    )),
                     DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text(
-                      "Date acquisition",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 19,
-                      ),
-                    )),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text(
-                      "Carte grise",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 19,
-                      ),
-                    )),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text(
-                      "Pièces",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 19,
-                      ),
-                    )),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text(
-                      "Vignette",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 19,
-                      ),
-                    )),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                    DataCell(TextField()),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text(
-                      "Assurance",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 19,
-                      ),
-                    )),
                     DataCell(TextField()),
                     DataCell(TextField()),
                     DataCell(TextField()),
@@ -208,13 +187,7 @@ class dosVehicule extends StatelessWidget {
                     DataCell(TextField()),
                   ]),
                   DataRow(cells: [
-                    DataCell(Text(
-                      "Lieu d'affectation",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 19,
-                      ),
-                    )),
+                    DataCell(TextField()),
                     DataCell(TextField()),
                     DataCell(TextField()),
                     DataCell(TextField()),
@@ -228,13 +201,7 @@ class dosVehicule extends StatelessWidget {
                     DataCell(TextField()),
                   ]),
                   DataRow(cells: [
-                    DataCell(Text(
-                      "Chauffeur",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 19,
-                      ),
-                    )),
+                    DataCell(TextField()),
                     DataCell(TextField()),
                     DataCell(TextField()),
                     DataCell(TextField()),
@@ -248,6 +215,42 @@ class dosVehicule extends StatelessWidget {
                     DataCell(TextField()),
                   ]),
                 ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Align(
+                alignment: Alignment.center,
+                child: Padding(
+                  padding: EdgeInsets.only(left: 40.0),
+                  child: Text(
+                    'Signature',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                        color: Color.fromARGB(255, 8, 7, 6)),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Align(
+                alignment: Alignment.center,
+                child: Padding(
+                  padding: EdgeInsets.only(left: 40.0),
+                  child: Text(
+                    'Chef de la structure',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                        color: Color.fromARGB(255, 8, 7, 6)),
+                  ),
+                ),
               ),
             ])));
   }

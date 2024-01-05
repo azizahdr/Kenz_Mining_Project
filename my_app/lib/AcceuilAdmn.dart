@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/Formulaires%20DepAdmin/Service%20Moyens%20G%C3%A9neraux/folderImmob.dart';
-import 'package:my_app/Formulaires%20DepAdmin/Service%20Moyens%20G%C3%A9neraux/folderVehicule.dart';
-import 'package:my_app/Formulaires%20DepAdmin/ServiceAchat.dart';
-import 'package:my_app/Formulaires%20DepAdmin/ServiceMoyen.dart';
+import 'package:my_app/Formulaire/Formulaires%20DepAdmin/Service%20Moyens%20G%C3%A9neraux/folderImmob.dart';
+import 'package:my_app/Formulaire/Formulaires%20DepAdmin/Service%20Moyens%20G%C3%A9neraux/folderVehicule.dart';
+import 'package:my_app/Formulaire/Formulaires%20DepAdmin/ServiceAchat.dart';
+import 'package:my_app/Formulaire/Formulaires%20DepAdmin/ServiceMoyen.dart';
 
 class AcceuilAdmn extends StatefulWidget {
   const AcceuilAdmn({Key? key}) : super(key: key);

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'package:my_app/login.dart';
 import 'AcceuilAdmn.dart';
-import 'Formulaires DepAdmin/Service Moyens Géneraux/folderVehicule/PrgrmDmd.dart';
+import 'Formulaire/Formulaires DepAdmin/Service Moyens Géneraux/folderVehicule/PrgrmDmd.dart';
 
 class Accueil extends StatefulWidget {
   const Accueil({Key? key}) : super(key: key);
@@ -129,7 +128,7 @@ class _AccueilState extends State<Accueil> {
                         height: 160,
                       ),
                       const Text(
-                        "Département des Resources Humains",
+                        "Département Resource Humaine",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 25,
